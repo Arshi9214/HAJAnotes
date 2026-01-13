@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.HajaNotes" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_accent</item>
+        <item name="colorSecondaryVariant">@color/blue_primary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/blue_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="iconsColor">@color/blue_primary_dark</item>
+        <item name="snackbarContainer">@color/blue_accent</item>
+    </style>
+
+    <!-- Green Theme -->
+    <style name="Theme.HajaNotes.Green" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_accent</item>
+        <item name="colorSecondaryVariant">@color/green_primary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/green_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="iconsColor">@color/green_primary_dark</item>
+        <item name="snackbarContainer">@color/green_accent</item>
+    </style>
+
+    <!-- Purple Theme -->
+    <style name="Theme.HajaNotes.Purple" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_accent</item>
+        <item name="colorSecondaryVariant">@color/purple_primary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="iconsColor">@color/purple_primary_dark</item>
+        <item name="snackbarContainer">@color/purple_accent</item>
+    </style>
+
+    <!-- Orange Theme -->
+    <style name="Theme.HajaNotes.Orange" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorPrimaryVariant">@color/orange_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/orange_accent</item>
+        <item name="colorSecondaryVariant">@color/orange_primary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/orange_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="iconsColor">@color/orange_primary_dark</item>
+        <item name="snackbarContainer">@color/orange_accent</item>
+    </style>
+
+    <!-- Red Theme -->
+    <style name="Theme.HajaNotes.Red" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryVariant">@color/red_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/red_accent</item>
+        <item name="colorSecondaryVariant">@color/red_primary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/red_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="iconsColor">@color/red_primary_dark</item>
+        <item name="snackbarContainer">@color/red_accent</item>
+    </style>
+</resources>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/settings_main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen80dp"
+            android:orientation="vertical">
+
+            <!-- appearance section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen16dp"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:paddingEnd="@dimen/dimen16dp"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/appearance" />
+
+            <LinearLayout
+                android:id="@+id/language_selection_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:layout_marginStart="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen16dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen24dp"
+                    android:layout_height="@dimen/dimen24dp"
+                    android:contentDescription="@string/language"
+                    android:layout_marginEnd="@dimen/dimen16dp"
+                    app:srcCompat="@drawable/ic_language" />
+
+                <LinearLayout
+                    android:id="@+id/language_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/language_header_selector"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/language"
+                        android:textSize="@dimen/dimen16sp" />
+
+                    <TextView
+                        android:id="@+id/language_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language"
+                        android:textSize="@dimen/dimen14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/dimen16dp"
+                android:background="?attr/colorOutline" />
+
+            <LinearLayout
+                android:id="@+id/md_mode_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen16dp"
+                android:layout_marginBottom="@dimen/dimen16dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen24dp"
+                    android:layout_height="@dimen/dimen24dp"
+                    android:contentDescription="@string/md_mode_header"
+                    android:layout_marginEnd="@dimen/dimen16dp"
+                    app:srcCompat="@drawable/ic_markdown" />
+
+                <LinearLayout
+                    android:id="@+id/md_mode_frame_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/md_mode_header"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/md_mode_header"
+                        android:textSize="@dimen/dimen16sp" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_md_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen32dp"
+                        android:contentDescription="@string/md_mode_header" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/dimen16dp"
+                android:background="?attr/colorOutline" />
+
+            <LinearLayout
+                android:id="@+id/theme_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen16dp"
+                android:layout_marginBottom="@dimen/dimen32dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen24dp"
+                    android:layout_height="@dimen/dimen24dp"
+                    android:contentDescription="Theme"
+                    android:layout_marginEnd="@dimen/dimen16dp"
+                    app:srcCompat="@drawable/ic_settings" />
+
+                <LinearLayout
+                    android:id="@+id/theme_frame_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/theme_header"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Theme"
+                        android:textSize="@dimen/dimen16sp" />
+
+                    <TextView
+                        android:id="@+id/theme_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        android:textSize="@dimen/dimen14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- security section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen16dp"
+                android:paddingEnd="@dimen/dimen16dp"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/security" />
+
+            <LinearLayout
+                android:id="@+id/biometric_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:layout_marginStart="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen16dp"
+                android:layout_marginBottom="@dimen/dimen32dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen24dp"
+                    android:layout_height="@dimen/dimen24dp"
+                    android:contentDescription="@string/settings_biometric_header"
+                    android:layout_marginEnd="@dimen/dimen16dp"
+                    app:srcCompat="@drawable/ic_fingerprint" />
+
+                <LinearLayout
+                    android:id="@+id/biometric_frame_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/biometric_header"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/settings_biometric_header"
+                        android:textSize="@dimen/dimen16sp" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_biometric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen32dp"
+                        android:contentDescription="@string/settings_biometric_header" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- notes info section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen16dp"
+                android:paddingEnd="@dimen/dimen16dp"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/notes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:layout_marginStart="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen16dp"
+                android:layout_marginBottom="@dimen/dimen32dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/database_info_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen24dp"
+                        android:layout_height="@dimen/dimen24dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_marginEnd="@dimen/dimen16dp"
+                        app:srcCompat="@drawable/ic_pencil_check" />
+
+                    <LinearLayout
+                        android:id="@+id/textview_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/notes_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/notes"
+                            android:textSize="@dimen/dimen16sp" />
+
+                        <TextView
+                            android:id="@+id/database_notes_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zero"
+                            android:textSize="@dimen/dimen14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:layout_marginBottom="@dimen/dimen12dp"
+                    android:background="?attr/colorOutline" />
+
+                <LinearLayout
+                    android:id="@+id/delete_notes_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen24dp"
+                        android:layout_height="@dimen/dimen24dp"
+                        android:contentDescription="@string/delete"
+                        android:layout_marginEnd="@dimen/dimen16dp"
+                        app:srcCompat="@drawable/ic_trash" />
+
+                    <LinearLayout
+                        android:id="@+id/delete_notes_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/delete_notes_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/delete"
+                            android:textSize="@dimen/dimen16sp" />
+
+                        <TextView
+                            android:id="@+id/delete_notes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete_notes"
+                            android:textSize="@dimen/dimen14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:layout_marginBottom="@dimen/dimen12dp"
+                    android:background="?attr/colorOutline" />
+
+                <LinearLayout
+                    android:id="@+id/backup_restore_notes_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen24dp"
+                        android:layout_height="@dimen/dimen24dp"
+                        android:contentDescription="@string/delete"
+                        android:layout_marginEnd="@dimen/dimen16dp"
+                        app:srcCompat="@drawable/ic_database" />
+
+                    <LinearLayout
+                        android:id="@+id/backup_restore_notes_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/backup_restore_notes_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/backup_and_restore"
+                            android:textSize="@dimen/dimen16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:layout_marginBottom="@dimen/dimen12dp"
+                    android:background="?attr/colorOutline" />
+
+                <LinearLayout
+                    android:id="@+id/share_notes_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen24dp"
+                        android:layout_height="@dimen/dimen24dp"
+                        android:contentDescription="@string/share_notes"
+                        android:layout_marginEnd="@dimen/dimen16dp"
+                        app:srcCompat="@drawable/ic_share" />
+
+                    <LinearLayout
+                        android:id="@+id/share_notes_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/share_notes_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/share_notes"
+                            android:textSize="@dimen/dimen16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- about section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen16dp"
+                android:paddingEnd="@dimen/dimen16dp"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/about" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:layout_marginStart="@dimen/dimen16dp"
+                android:layout_marginEnd="@dimen/dimen16dp"
+                android:layout_marginBottom="@dimen/dimen32dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/about_selection_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen24dp"
+                        android:layout_height="@dimen/dimen24dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_marginEnd="@dimen/dimen16dp"
+                        app:srcCompat="@drawable/ic_info" />
+
+                    <LinearLayout
+                        android:id="@+id/about_version_selection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/about_version_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/version"
+                            android:textSize="@dimen/dimen16sp" />
+
+                        <TextView
+                            android:id="@+id/app_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/version"
+                            android:textSize="@dimen/dimen14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
