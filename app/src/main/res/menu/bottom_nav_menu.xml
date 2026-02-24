@@ -12,6 +12,11 @@
         android:title="@string/topics" />
 
     <item
+        android:id="@+id/navigation_tbr"
+        android:icon="@drawable/ic_book"
+        android:title="@string/tbr" />
+
+    <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_settings"
         android:title="@string/settings" />

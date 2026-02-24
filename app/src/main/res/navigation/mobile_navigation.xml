@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_topics" />
 
     <fragment
+        android:id="@+id/navigation_tbr"
+        android:name="com.hajanotes.fragments.TBRFragment"
+        android:label="@string/tbr"
+        tools:layout="@layout/fragment_tbr" />
+
+    <fragment
         android:id="@+id/navigation_settings"
         android:name="com.hajanotes.fragments.SettingsFragment"
         android:label="@string/settings"

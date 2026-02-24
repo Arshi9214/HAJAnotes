@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen54dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen16dp">
+
+            <!-- My TBR List Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_be_read"
+                android:textSize="@dimen/dimen20sp"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/dimen8dp" />
+
+            <LinearLayout
+                android:id="@+id/tbr_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Recommendations Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recommendations"
+                android:textSize="@dimen/dimen20sp"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/dimen24dp"
+                android:paddingBottom="@dimen/dimen8dp" />
+
+            <!-- Programming Books -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programming Books"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/dimen8dp"
+                android:paddingBottom="@dimen/dimen8dp" />
+
+            <ListView
+                android:id="@+id/programming_books_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Fiction Books -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fiction Bestsellers"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/dimen16dp"
+                android:paddingBottom="@dimen/dimen8dp" />
+
+            <ListView
+                android:id="@+id/fiction_books_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Non-Fiction Books -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non-Fiction Bestsellers"
+                android:textSize="@dimen/dimen16sp"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/dimen16dp"
+                android:paddingBottom="@dimen/dimen8dp" />
+
+            <ListView
+                android:id="@+id/nonfiction_books_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_book_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/dimen40dp"
+        android:layout_marginEnd="@dimen/dimen16dp"
+        android:contentDescription="@string/add_to_tbr"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

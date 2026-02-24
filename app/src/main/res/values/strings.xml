@@ -96,5 +96,13 @@
     <string name="title">Title (mandatory)</string>
     <string name="general">General</string>
     <string name="save">Save</string>
+    <string name="tbr">TBR</string>
+    <string name="to_be_read">My To Be Read List</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="add_to_tbr">Add to TBR</string>
+    <string name="book_title">Book Title</string>
+    <string name="author_name">Author Name</string>
+    <string name="book_added">Book added to TBR</string>
+    <string name="book_removed">Book removed from TBR</string>
     <!-- generic terms -->
 </resources>
